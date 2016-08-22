@@ -75,43 +75,267 @@
 </section>
 <section class="slider">
 	<div class="container">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			    <li data-target="#myCarousel" data-slide-to="1" ></li>
-			    <li data-target="#myCarousel" data-slide-to="2"></li>
-		  	</ol>
-			<div class="carousel-inner" role="listbox">
-			    <div class="item active row">
-			    	<p class="col-md-10 col-md-offset-1 text-center">Одна из самых оперативных и четких в работе курьерских служб, с которыми приходилось сталкиваться по долгу службы. В силу особенностей работы нашей компании часто приходится отправлять счета и акты нашим партнерам в другой конец города, и ни разу не было случаев опоздания даже на полчаса. Не в пример другим компаниям, чьи курьеры часто бывают доставить пакет документов вовремя, чтобы поставить подпись директора перед его отъездом, из-за чего потом озникают проволочки и другие неприятности у бухгалтерии. В целом, очень довольны работой курьеров и не собираемся менять службу доставки в ближайший год. 
-			    	</p>	
-			    	<span class="new_string text-center clearfix">Александра, менеджер по персоналу</span>	    	
-			    </div>
-			    <div class="item row">
-			    	<p class="col-md-10 col-md-offset-1 text-center">Когда только начинали работу нашей компании, одной из самых главных проблем была именно доставка заказов клиентам. В то время услуги курьеров стоили достаточно дорого, да и в нашем районе было всего одна-две службы доставки. 
-					Приходилось нанимать студентов или самим колесить по городу, тратя собственный бензин. Теперь эта задача полностью возложена на вашу курьерскую службу, чему мы несказанно рады. Оперативная, четко организованная работа на пять с плюсом! Уже познакомились с вашими курьерами и считаем их практически членами коллектива. Спасибо за высокое качество работы, одно удовольствие 
-					работать с вами!
-					</p>	
-			    	<span class="new_string text-center clearfix">Владимир, отдел продаж</span>	    	
-			    </div>
-			    <div class="item row">
-			    	<p class="col-md-10 col-md-offset-1 text-center">Каждый сотрудник бухгалтерии знает, сколько проблем доставляет не вовремя присланные акты, счета, сверки и другие важные документы. Особенно во время квартальных отчетов получается дурдом… поэтому решили сотрудничать с вашей службой доставки документов по городу, чем очень довольны. Идею подсказали наши партнеры, которые пользуются услугами компании уже не первый месяц. Теперь все документы, письма, оригиналы счетов и актов наша бухгалтерия получает точно в срок, без задержек и промедлений. Ребята работают быстро, город знают на отлично, на них всегда можно положиться!
-			    	</p>	
-			    	<span class="new_string text_center clearfix">Анна Закревская, главный бухгалтер</span>	    	
-			    </div>
-			</div>
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			    <span aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			    <span aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			</a>
-		</div>
+		<ul class="bxslider">
+		  	<li>
+		  		<div class="slide1">
+					<p class="slide_title">Вязанный свитер<span>Montpellier Coulomb</span></p>
+				   	<p class="slide_description col-md-4">Интересная фактурная вязка ручной работы подчеркнет индивидуальность, делая образ неповторимым.</p>	
+				   	<span class="new_string text-left clearfix slide_price">680<span>руб.</span></span>
+			   </div>
+		  	</li>
+		  	<li class="slide2">
+		  		<div class="slide2">
+					<p class="slide_title">Зимняя шапка</p>
+				   	<p class="slide_description col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quam maxime nostrum voluptatem eveniet! Dolor.</p>	
+				   	<span class="new_string text-left clearfix slide_price">470<span>руб.</span></span>
+			   	</div>	 
+		 	<li class="slide3">
+		 		<div class="slide3">
+			 		<p class="slide_title">Рубашка</p>
+			    	<p class="slide_description col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum suscipit culpa.</p>
+			    	<span class="new_string text-left clearfix slide_price">920<span>руб.</span></span>
+		    	</div>		
+		  	</li>		  
+		</ul>
 	</div>	
 </section>
-<section class="advanteges">
+<section class="search_goods">
+	<div class="container">
+		<form action="" method="post" class="search_goods_form">
+			<input type="search" name="" placeholder="Поиск товара до 1000 рублей. Например, балетки" class="input" />
+		    <input type="submit" name="" value="" class="submit" />
+		</form>
+		<button type="button" id="search_goods_button">поиск товаров</button>
+	</div>
+</section>
+<section class="main_menu">
+	<div class="container">
+		<ul class="row">
+			<li class="main_menu_item col-md-4">
+				<a href="#">
+					<img src="img/krosovki.png" alt="pic">
+					<span class="main_menu_item_bg">
+						<span class="main_menu_item_title">Кроссовки и кеды</span>
+						<span class="main_menu_item_amount"><span class="main_menu_item_amount_number">680</span>
+						<span>товаров</span>
+					</span>
+				</a>
+			</li>
+			<li class="main_menu_item col-md-4">
+				<img src="img/platye.png" alt="pic">
+				<a href="#">
+					<span class="main_menu_item_bg">
+						<span class="main_menu_item_title">Платья</span>
+						<span class="main_menu_item_amount"><span class="main_menu_item_amount_number">680</span>
+						<span>товаров</span>
+					</span>
+				</a>
+			</li>
+			<li class="main_menu_item col-md-4">
+				<img src="img/jeans.png" alt="pic">
+				<a href="#">
+					<span class="main_menu_item_bg">
+						<span class="main_menu_item_title">Джинсы</span>
+						<span class="main_menu_item_amount"><span class="main_menu_item_amount_number">680</span>
+						<span>товаров</span>
+					</span>
+				</a>
+			</li>
+			<li class="main_menu_item col-md-4">
+				<img src="img/bag.png" alt="pic">
+				<a href="#">
+					<span class="main_menu_item_bg">
+						<span class="main_menu_item_title">Сумки</span>
+						<span class="main_menu_item_amount"><span class="main_menu_item_amount_number">680</span>
+						<span>товаров</span>
+					</span>
+				</a>
+			</li>
+			<li class="main_menu_item col-md-4">
+				<img src="img/bluzki.png" alt="pic">
+				<a href="#">
+					<span class="main_menu_item_bg">
+						<span class="main_menu_item_title">Блузки и рубашки</span>
+						<span class="main_menu_item_amount"><span class="main_menu_item_amount_number">680</span>
+						<span>товаров</span>
+					</span>
+				</a>
+			</li>
+			<li class="main_menu_item col-md-4">
+				<img src="img/ubki.png" alt="pic">
+				<a href="#">
+					<span class="main_menu_item_bg">
+						<span class="main_menu_item_title">Юбки и шорты</span>
+						<span class="main_menu_item_amount"><span class="main_menu_item_amount_number">680</span>
+						<span>товаров</span>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<section class="popular_goods">
+	<div class="popular_goods_top">
+		<h3>Популярные товары</h3>	
+		<span>Представляем самую популярную, среди наших покупателей, продукцию известных брендов</span>
+	</div>	
+	<div class="container">
+		<ul class="row">
+			<li class="popular_goods_item col-md-3">
+				<a href="#">
+					<div class="img_wrapper">
+						<img src="img/pg1.png" alt="pic">
+					</div>					
+					<span class="popular_goods_item_title">Adidas Sport</span>
+					<span class="popular_goods_item_description">Мужская стильная спортивная шапка 
+Adidas B800 Sweppre NEW</span>
+					<span class="popular_goods_item_price">870</span><span>руб.</span>
+				</a>
+				<a href="#" class="zoom"></a>
+				<a href="#" class="like"></a>
+			</li>
+			<li class="popular_goods_item col-md-3">
+				<a href="#">
+					<div class="img_wrapper">
+						<img src="img/pg2.png" alt="pic"> 
+					</div>						
+					<span class="popular_goods_item_title">Paoko Summy</span>
+					<span class="popular_goods_item_description">Мужская стильная спортивная шапка 
+Adidas B800 Sweppre NEW</span>
+					<span class="popular_goods_item_price">870</span><span>руб.</span>
+				</a>
+				<a href="#" class="zoom"></a>
+				<a href="#" class="like"></a>
+				<span class="discount">Скидка - 30%</span>
+			</li>
+			<li class="popular_goods_item col-md-3">
+				<a href="#">
+					<div class="img_wrapper">
+						<img src="img/pg3.png" alt="pic"> 
+					</div>					
+					<span class="popular_goods_item_title">Mark Jakobs</span>
+					<span class="popular_goods_item_description">Мужская стильная спортивная шапка 
+Adidas B800 Sweppre NEW</span>
+					<span class="popular_goods_item_price">870</span><span>руб.</span>
+				</a>
+				<a href="#" class="zoom"></a>
+				<a href="#" class="like"></a>
+			</li>
+			<li class="popular_goods_item col-md-3">
+				<a href="#">
+					<div class="img_wrapper">
+						<img src="img/pg4.png" alt="pic"> 
+					</div>					
+					<span class="popular_goods_item_title">Giorgio Armani</span>
+					<span class="popular_goods_item_description">Мужская стильная спортивная шапка 
+Adidas B800 Sweppre NEW</span>
+					<span class="popular_goods_item_price">870</span><span>руб.</span>
+				</a>
+				<a href="#" class="zoom"></a>
+				<a href="#" class="like"></a>
+			</li>
+			<li class="popular_goods_item col-md-3">
+				<a href="#">
+					<div class="img_wrapper">
+						<img src="img/pg5.png" alt="pic"> 
+					</div>					
+					<span class="popular_goods_item_title">Lacoste</span>
+					<span class="popular_goods_item_description">Мужская стильная спортивная шапка 
+Adidas B800 Sweppre NEW</span>
+					<span class="popular_goods_item_price">870</span><span>руб.</span>
+				</a>
+				<a href="#" class="zoom"></a>
+				<a href="#" class="like"></a>
+			</li>
+			<li class="popular_goods_item col-md-3">
+				<a href="#">
+					<div class="img_wrapper">
+						 <img src="img/pg6.png" alt="pic">
+					</div>						
+					<span class="popular_goods_item_title">Giorgio Armani</span>
+					<span class="popular_goods_item_description">Мужская стильная спортивная шапка 
+Adidas B800 Sweppre NEW</span>
+					<span class="popular_goods_item_price">870</span><span>руб.</span>
+				</a>
+				<a href="#" class="zoom"></a>
+				<a href="#" class="like"></a>
+			</li>
+			<li class="popular_goods_item col-md-3">
+				<a href="#">
+					<div class="img_wrapper">
+						<img src="img/pg7.png" alt="pic"> 
+					</div>						
+					<span class="popular_goods_item_title">Giorgio Armani</span>
+					<span class="popular_goods_item_description">Мужская стильная спортивная шапка 
+Adidas B800 Sweppre NEW</span>
+					<span class="popular_goods_item_price">870</span><span>руб.</span>					
+					<span class="old_price">770</span><span>руб.</span>
+				</a>
+				<a href="#" class="zoom"></a>
+				<a href="#" class="like"></a>
+			</li>
+			<li class="popular_goods_item col-md-3">
+				<a href="#">
+					<div class="img_wrapper">
+						<img src="img/pg8.png" alt="pic"> 
+					</div>					
+					<span class="popular_goods_item_title">Dsquared</span>
+					<span class="popular_goods_item_description">Мужская стильная спортивная шапка 
+Adidas B800 Sweppre NEW</span>
+					<span class="popular_goods_item_price">870</span><span>руб.</span>
+				</a>
+				<a href="#" class="zoom"></a>
+				<a href="#" class="like"></a>
+			</li>
+		</ul>	
+	</div>
+</section>
+<section class="brands">
+	<h3>Доступные мировые производители</h3>
+	<div class="container">
+		<ul class="bxslider2 row">
+			<li class="brands_item col-md-2">
+				<div class="img_wrap">
+					<img src="/img/hm.png"/>
+				</div>				
+				<span>680 товаров</span>
+			</li>
+			<li class="brands_item col-md-2">
+				<div class="img_wrap">
+					<img src="/img/nike.png"/>
+				</div>				
+				<span>680 товаров</span>
+			</li>
+			<li class="brands_item col-md-2">
+				<div class="img_wrap">
+					<img src="/img/decora.png"/>
+				</div>				
+				<span>680 товаров</span>
+			</li>
+			<li class="brands_item col-md-2">
+				<div class="img_wrap">
+					<img src="/img/rb.png"/>
+				</div>				
+				<span>680 товаров</span>
+			</li>
+			<li class="brands_item col-md-2">
+				<div class="img_wrap">
+					<img src="/img/puma.png"/>
+				</div>				
+				<span>680 товаров</span>
+			</li>
+			<li class="brands_item col-md-2">
+				<div class="img_wrap">
+					<img src="/img/rapha.png"/>
+				</div>				
+				<span>680 товаров</span>
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<!-- <section class="advanteges">
 	<div class="container">
 		<h2>Сделайте свою жизнь проще!</h2>
 		<div class="advanteges_text">
@@ -165,7 +389,7 @@
 			</div>			
 		</div>
 	</div>	
-</section>
+</section> -->
 
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>  

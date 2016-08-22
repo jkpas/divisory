@@ -41,11 +41,23 @@ input:active, textarea:active, button:active
 ul
   list-style: none
 
+.clearfix
+  clear: both  
+
+@font-face 
+	font-family: 'DINPro-Regular'
+	src: url('../fonts/DINPro-Regular.eot')
+	src: local('☺'), url('../fonts/DINPro-Regular.woff') format('woff'), url('../fonts/DINPro-Regular.ttf') format('truetype'), url('../fonts/DINPro-Regular.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+$dinpro: 'DINPro-Regular'  
+
 .container 
-	width: 1240px
+	max-width: 1240px
+	width: 100%
 	padding-right: 0
 	padding-left: 0
-
 
 .row 
   margin-right: -10px
@@ -55,34 +67,18 @@ ul
   padding-right: 10px
   padding-left: 10px
 
-
-body
-	background-color: #ffffff
-
-
-@font-face 
-	font-family: 'DINPro-Regular'
-	src: url('../fonts/DINPro-Regular.eot')
-	src: local('☺'), url('../fonts/DINPro-Regular.woff') format('woff'), url('../fonts/DINPro-Regular.ttf') format('truetype'), url('../fonts/DINPro-Regular.svg') format('svg')
-	font-weight: normal
-	font-style: normal
-
-$dinpro: 'DINPro-Regular';
-
-.clearfix
-  clear: both
-
-.marg_bot_90
-  margin-bottom: 90px
-
-
 * 
   font-family: 'PT Sans', sans-serif
   // font-family: 'Open Sans', sans-serif
   font-size: 12px
   box-sizing: border-box
-  -moz-box-sizing: border-box
+  -moz-box-sizing: border-box  
 
+body
+	background-color: #ffffff
+
+section
+	margin-bottom: 40px
 
 input
   width: 100%
@@ -95,35 +91,23 @@ input
   // border: 3px solid #fcf7f7
   // color: #fcf7f7
 
-
 input::-webkit-input-placeholder color:inherit
 input::-moz-placeholder          color:inherit/* Firefox 19+ */
 input:-moz-placeholder           color:inherit/* Firefox 18- */
 input:-ms-input-placeholder      color:inherit
 
-// section
-//   padding: 55px 0
-
-
 h2
   font-size: 30px
   margin-bottom: 50px
 
-
 p
   font-size: 18px
-
 
 span
   font-size: 18px
 
-
-// .red
-//   color: #fe2617
-
-
-// .new_string
-//   display: block
+.new_string
+  display: block
 
 
 // .btn_main
@@ -151,7 +135,7 @@ span
 		float: left
 		margin: 6px 0 0 105px
 		position: relative		
-		width: 672px
+		max-width: 672px
 		height: 45px
 		.input	
 			border: 1px solid #e0e0e0
@@ -256,3 +240,316 @@ span
 		font-style: italic
 		font-size: 17px
 		color: #ffffff
+.slider
+	height: 502px	
+	.container
+		height: 100%
+		.bxslider
+			height: 502px
+			li					
+				width: 100%
+				height: 100%
+				div
+					padding: 65px 0 0 80px
+					height: 100%		
+					.slide_title
+						text-align: left
+						font-family: 'Open Sans', sans-serif
+						font-weight: 300
+						font-style: italic
+						font-size: 50px
+						line-height: 60px
+						margin-bottom: 40px
+						span
+							display: block
+							font-family: inherit
+							font-weight: inherit
+							font-style: inherit
+							font-size: inherit
+					.slide_description
+						font-size: 17px
+						color: #404040
+						text-align: left
+						margin-bottom: 40px
+						line-height: 26px
+					.slide_price
+						font-family: $dinpro
+						font-size: 111px
+						color: #ff5a3f	
+						span	
+							font-family: inherit
+							color: inherit
+							font-size: 50px
+				.slide1 													
+					background: url(../img/slider-img1.png) no-repeat top
+				.slide2 
+					background: url(../img/slider-img1.png) no-repeat top
+				.slide3 
+					background: url(../img/slider-img1.png) no-repeat top
+		.bx-pager
+			position: absolute 		
+			bottom: 0px
+			height: 26px
+			width: 100%
+			padding-top: 10px
+			background: url(../img/slider-pagin-bg.png) no-repeat center bottom
+			a
+				height: 13px
+				width: 13px
+				background: #e0e0e0
+				border-radius: 50% 
+				padding-top: 11px
+				font-size: 0
+			a.pager-active
+				background: #ff5a3f 
+		.bx-prev 
+			position: absolute
+			left: -22px
+			top: 45%
+			height: 78px
+			width: 44px
+			background: url(../img/slider-prev.png) center no-repeat
+		.bx-next 
+			position: absolute
+			right: -22px
+			top: 45%
+			height: 78px
+			width: 44px
+			background: url(../img/slider-next.png) center no-repeat
+		.bx-prev:hover,.bx-next:hover
+			opacity: 0.7
+.search_goods
+	.container
+		padding: 40px
+		background: url(../img/search-goods-bg.png)
+		border-radius: 3px
+		.search_goods_form
+			position: relative		
+			max-width: 910px
+			width: 100%
+			height: 60px
+			float: left
+			.input	
+				border: none
+				padding: 0 20px
+				border-radius: 3px
+				font-size: 15px
+				color: #bcbcbc
+				font-style: italic
+				height: 100%
+				width: 100%		
+			.submit   
+	  		position: absolute
+	  		top: 0
+	  		right: 21px
+	 			width: 40px
+	  		height: 60px
+	  		cursor: pointer
+	  		background: url(../img/go-big.png) center center no-repeat
+	  		border: none
+		#search_goods_button
+			float: right
+			height: 60px
+			width: 230px
+			background: #ff5a3f
+			border-radius: 3px
+			color: #ffffff
+			font-size: 13px
+			text-transform: uppercase
+			text-align: center
+			padding: 22px 0
+			border: none
+.main_menu
+	.container
+		ul
+			list-style: none
+			.main_menu_item
+				height: 360px
+				margin-bottom: 20px
+				overflow: hidden
+				position: relative
+				img
+					display: block
+					width: 100%
+					height: auto
+				.main_menu_item_bg
+					position: absolute
+					height: 80px
+					background-color: #313131
+					opacity: 0.5
+					bottom: 30px
+					left: 10px
+					right: 10px
+					padding: 13px 0 0 40px					
+					.main_menu_item_title
+						display: block
+						text-align: left
+						font-size: 21px
+						line-height: 24px
+						color: #ffffff
+						margin-bottom: 5px
+					.main_menu_item_amount
+						display: block
+						text-align: left
+						font-size: 15px
+						color: #ffffff
+				.main_menu_item_bg:after
+					position: absolute
+					content: ""
+					background: url(../img/dots-icon.png) no-repeat
+					top: 30px
+					right: 40px
+					width: 12px
+					height: 18px
+			.main_menu_item:hover
+				.main_menu_item_bg
+					height: 100%
+					bottom: 0
+					padding-top: 263px
+				.main_menu_item_bg:after				
+					top: 280px
+					right: 370px
+.popular_goods					
+	.popular_goods_top
+		padding: 45px 0 35px
+		border-top: 1px solid #f2f2f2
+		h3
+			font-family: 'Open Sans', sans-serif
+			font-weight: 200
+			font-style: italic
+			color: #404040
+			margin-bottom: 25px
+			font-size: 45px
+		span
+			font-style: italic
+			line-height: 25px
+			font-size: 17px
+			color: #404040
+	.container		
+		ul
+			list-style: none
+			.popular_goods_item
+				height: 480px
+				margin-bottom: 20px
+				overflow: hidden
+				position: relative
+				.discount
+					position: absolute
+					width: 93px
+					height: 33px
+					background: url(../img/discount-bg.png) no-repeat
+					top: 21px
+					left: 6px
+					color: #ffffff
+					font-size: 13px
+					text-align: center
+					padding-top: 7px
+				.zoom
+					display: none
+				.like
+					display: none
+				a
+					text-decoration: none
+					.img_wrapper
+						height: 342px
+						border: 1px solid #f2f2f2
+						border-radius: 3px
+						overflow: hidden
+						text-align: center
+						padding-top: 50px
+						margin-bottom: 15px
+						img	
+							text-align: center
+					.popular_goods_item_title
+						display: block
+						text-align: left
+						font-size: 17px
+						line-height: 25px
+						color: #404040
+						margin-bottom: 5px
+					.popular_goods_item_description
+						display: block
+						text-align: left
+						font-size: 17px
+						line-height: 27px
+						color: #bcbcbc
+						margin-bottom: 5px				
+					.popular_goods_item_price
+						float: left
+						font-family: $dinpro 			
+						font-size: 27px
+						color: #ff5a3f
+					.popular_goods_item_price +	span
+						float: left
+						font-size: 15px
+						color: #2d2d2d	
+						margin-left: 5px
+						padding-top: 14px	
+					.old_price
+						float: left
+						font-family: $dinpro 			
+						font-size: 15px
+						color: #bcbcbc
+						text-decoration: line-through
+						padding-top: 15px
+						margin-left: 20px
+					.old_price + span
+						float: left
+						font-size: 15px
+						color: #bcbcbc	
+						margin-left: 5px
+						padding-top: 15px							
+			.popular_goods_item:hover
+				.img_wrapper
+					background-color: #f7f7f7
+					opacity: 0.2
+				.zoom
+
+					display: block
+					position: absolute
+					width: 65px
+					height: 65px
+					background: url(../img/zoom.png) no-repeat
+					top: 138px
+					left: 78px
+				.like
+					display: block
+					position: absolute
+					width: 65px
+					height: 65px
+					background: url(../img/like.png) no-repeat
+					top: 138px
+					left: 152px
+.brands
+	h3
+		padding: 50px 0 40px
+		border-top: 1px solid #f2f2f2
+		font-family: 'Open Sans', sans-serif
+		font-weight: 200
+		font-style: italic
+		color: #404040
+		margin-bottom: 25px
+		font-size: 34px
+	.container
+		.bx-window
+			width: 100%
+			.bxslider2
+				height: 150px
+				.brands_item	
+					height: 100%
+					.img_wrap
+						height: 100px
+						border-radius: 3px
+						border: 1px solid #f2f2f2
+						text-align: center
+						padding-top: 20px
+						margin-bottom: 16px
+					span
+						font-size: 15px
+						color: #bcbcbc
+
+				
+
+
+
+
