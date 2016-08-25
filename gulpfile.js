@@ -38,6 +38,8 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 
+
+
 gulp.task('watch', ['browser-sync', 'sass', 'scripts'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
@@ -63,7 +65,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/main.css',
-		'app/css/libs.min.css'
+		'app/css/libs.css',
+		'app/css/bootstrap.css',
+		'app/css/owlcarousel.css'
 		])
 	.pipe(gulp.dest('dist/css'))
 
