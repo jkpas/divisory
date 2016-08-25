@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta content="initial-scale=1.0, width=device-width" name="viewport">
+	<meta content="initial-scale=1, width=device-width" name="viewport">
 	<title>Quickstart</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&subset=cyrillic-ext" rel="stylesheet">
-	<link rel="stylesheet" href="libs/bxslider/bx_styles/bx_styles.css">
+	<link rel="stylesheet" href="libs/owlcarousel/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
     <!--[if lt IE 9]>
@@ -42,27 +42,23 @@
 	</div>
     <div class="header_bottom">
     	<div class="container">
+    		<button id="hamb-btn"></button>
 	       	<nav class="header_nav">
 	       		<ul>
 	       			<li class="header_nav_item item1">
 	       				<a href="#">женщинам</a>
-	       				<span></span>
 	       			</li>
 	       			<li class="header_nav_item item2">
 	       				<a href="#">мужчинам</a>
-	       				<span></span>
 	       			</li>
 	       			<li class="header_nav_item item3">
 	       				<a href="#">детям</a>
-	       				<span></span>
 	       			</li>
 	       			<li class="header_nav_item item4">
 	       				<a href="#">для беременных</a>
-	       				<span></span>
 	       			</li>
 	       			<li class="header_nav_item item5">
 	       				<a href="#">бренды</a>
-	       				<span></span>
 	       			</li>
 	       		</ul>
 	       		<div class="hover_menu">
@@ -157,40 +153,36 @@
 	    </div>   	
     </div>	
 </header>
-<section class="slogan text-center">
+<section class="slogan">
 	<h2>Любой товар до 1000 рублей</h2>
 	<h3>Одежда, обувь, аксессуары из популярных магазинов по минимальной цене!</h3>
 </section>
+
 <section class="slider">
 	<div class="container">
-		<ul class="bxslider">
-		  	<li>
-		  		<div class="slide1">
-					<h3 class="slide_title">Вязанный свитер<span>Montpellier Coulomb</span></h3>
-				   	<p class="slide_description col-md-4">Интересная фактурная вязка ручной работы подчеркнет индивидуальность, делая образ неповторимым.</p>	
-				   	<span class="new_string text-left clearfix slide_price">680<span>руб.</span></span>
-			   </div>
-		  	</li>
-		  	<li class="slide2">
-		  		<div class="slide2">
-					<h3 class="slide_title">Зимняя шапка</h3>
-				   	<p class="slide_description col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quam maxime nostrum voluptatem eveniet! Dolor.</p>	
-				   	<span class="new_string text-left clearfix slide_price">470<span>руб.</span></span>
-			   	</div>	 
-		 	<li class="slide3">
-		 		<div class="slide3">
-			 		<h3 class="slide_title">Рубашка</h3>
-			    	<p class="slide_description col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum suscipit culpa.</p>
-			    	<span class="new_string text-left clearfix slide_price">920<span>руб.</span></span>
-		    	</div>		
-		  	</li>		  
-		</ul>
+		<div id="owl-slider1" class="owl-slider1">
+			<div class="owl-slider1_item slide1">
+				<h3 class="slide_title">Вязанный свитер<span>Montpellier Coulomb</span></h3>
+			   	<p class="slide_description col-md-4">Интересная фактурная вязка ручной работы подчеркнет индивидуальность, делая образ неповторимым.</p>	
+			   	<span class="new_string text-left clearfix slide_price">680<span>руб.</span></span>
+			</div>
+			<div class="owl-slider1_item slide2">
+				<h3 class="slide_title">Зимняя шапка</h3>
+			   	<p class="slide_description col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quam maxime nostrum voluptatem eveniet! Dolor.</p>	
+			   	<span class="new_string text-left clearfix slide_price">470<span>руб.</span></span>
+			</div>
+			<div class="owl-slider1_item slide3">
+				<h3 class="slide_title">Рубашка</h3>
+			    <p class="slide_description col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum suscipit culpa.</p>
+			    <span class="new_string text-left clearfix slide_price">920<span>руб.</span></span>
+			</div>			
+		</div>
 	</div>	
 </section>
 <section class="search_goods">
 	<div class="container">
 		<form action="" method="post" class="search_goods_form">
-			<input type="search" name="" placeholder="Поиск товара до 1000 рублей. Например, балетки" class="input" />
+			<input class="search_goods_form_input" type="search" name="" placeholder="Поиск товара до 1000 рублей. Например, балетки"/>
 		    <input type="submit" name="" value="" class="submit" />
 		</form>
 		<button type="button" id="search_goods_button">поиск товаров</button>
@@ -199,7 +191,7 @@
 <section class="main_menu">
 	<div class="container">
 		<ul class="row">
-			<li class="main_menu_item col-md-4">
+			<li class="main_menu_item col-md-4 col-sm-6 col-xs-12">
 				<a href="#">
 					<img src="img/krosovki.png" alt="pic">
 					<span class="main_menu_item_bg">
@@ -209,7 +201,7 @@
 					</span>
 				</a>
 			</li>
-			<li class="main_menu_item col-md-4">
+			<li class="main_menu_item col-md-4 col-sm-6  col-xs-12">
 				<img src="img/platye.png" alt="pic">
 				<a href="#">
 					<span class="main_menu_item_bg">
@@ -219,7 +211,7 @@
 					</span>
 				</a>
 			</li>
-			<li class="main_menu_item col-md-4">
+			<li class="main_menu_item col-md-4 col-sm-6  col-xs-12">
 				<img src="img/jeans.png" alt="pic">
 				<a href="#">
 					<span class="main_menu_item_bg">
@@ -229,7 +221,7 @@
 					</span>
 				</a>
 			</li>
-			<li class="main_menu_item col-md-4">
+			<li class="main_menu_item col-md-4 col-sm-6  col-xs-12">
 				<img src="img/bag.png" alt="pic">
 				<a href="#">
 					<span class="main_menu_item_bg">
@@ -239,7 +231,7 @@
 					</span>
 				</a>
 			</li>
-			<li class="main_menu_item col-md-4">
+			<li class="main_menu_item col-md-4 col-sm-6 col-xs-12">
 				<img src="img/bluzki.png" alt="pic">
 				<a href="#">
 					<span class="main_menu_item_bg">
@@ -249,7 +241,7 @@
 					</span>
 				</a>
 			</li>
-			<li class="main_menu_item col-md-4">
+			<li class="main_menu_item col-md-4  col-sm-6 col-xs-12">
 				<img src="img/ubki.png" alt="pic">
 				<a href="#">
 					<span class="main_menu_item_bg">
@@ -269,7 +261,7 @@
 	</div>	
 	<div class="container">
 		<ul class="row">
-			<li class="popular_goods_item col-md-3">
+			<li class="popular_goods_item col-md-3 col-sm-4 col-xs-6">
 				<a href="#">
 					<div class="img_wrapper">
 						<img src="img/pg1.png" alt="pic">
@@ -278,10 +270,12 @@
 					<span class="popular_goods_item_description">Мужская стильная спортивная шапка Adidas B800 Sweppre NEW</span>
 					<span class="popular_goods_item_price">870</span><span>руб.</span>
 				</a>
-				<a href="#" class="zoom"></a>
-				<a href="#" class="like"></a>
+				<div class="popular_goods_item_hover_links">
+					<a href="#" class="zoom"></a>
+					<a href="#" class="like"></a>
+				</div>
 			</li>
-			<li class="popular_goods_item col-md-3">
+			<li class="popular_goods_item col-md-3 col-sm-4 col-xs-6">
 				<a href="#">
 					<div class="img_wrapper">
 						<img src="img/pg2.png" alt="pic"> 
@@ -290,11 +284,13 @@
 					<span class="popular_goods_item_description">Мужская стильная спортивная шапка Adidas B800 Sweppre NEW</span>
 					<span class="popular_goods_item_price">870</span><span>руб.</span>
 				</a>
-				<a href="#" class="zoom"></a>
-				<a href="#" class="like"></a>
+				<div class="popular_goods_item_hover_links">
+					<a href="#" class="zoom"></a>
+					<a href="#" class="like"></a>
+				</div>
 				<span class="discount">Скидка - 30%</span>
 			</li>
-			<li class="popular_goods_item col-md-3">
+			<li class="popular_goods_item col-md-3 col-sm-4 col-xs-6">
 				<a href="#">
 					<div class="img_wrapper">
 						<img src="img/pg3.png" alt="pic"> 
@@ -303,10 +299,12 @@
 					<span class="popular_goods_item_description">Мужская стильная спортивная шапка Adidas B800 Sweppre NEW</span>
 					<span class="popular_goods_item_price">870</span><span>руб.</span>
 				</a>
-				<a href="#" class="zoom"></a>
-				<a href="#" class="like"></a>
+				<div class="popular_goods_item_hover_links">
+					<a href="#" class="zoom"></a>
+					<a href="#" class="like"></a>
+				</div>
 			</li>
-			<li class="popular_goods_item col-md-3">
+			<li class="popular_goods_item col-md-3 col-sm-4 col-xs-6">
 				<a href="#">
 					<div class="img_wrapper">
 						<img src="img/pg4.png" alt="pic"> 
@@ -315,10 +313,12 @@
 					<span class="popular_goods_item_description">Мужская стильная спортивная шапка Adidas B800 Sweppre NEW</span>
 					<span class="popular_goods_item_price">870</span><span>руб.</span>
 				</a>
-				<a href="#" class="zoom"></a>
-				<a href="#" class="like"></a>
+				<div class="popular_goods_item_hover_links">
+					<a href="#" class="zoom"></a>
+					<a href="#" class="like"></a>
+				</div>
 			</li>
-			<li class="popular_goods_item col-md-3">
+			<li class="popular_goods_item col-md-3 col-sm-4 col-xs-6">
 				<a href="#">
 					<div class="img_wrapper">
 						<img src="img/pg5.png" alt="pic"> 
@@ -327,10 +327,12 @@
 					<span class="popular_goods_item_description">Мужская стильная спортивная шапка Adidas B800 Sweppre NEW</span>
 					<span class="popular_goods_item_price">870</span><span>руб.</span>
 				</a>
-				<a href="#" class="zoom"></a>
-				<a href="#" class="like"></a>
+				<div class="popular_goods_item_hover_links">
+					<a href="#" class="zoom"></a>
+					<a href="#" class="like"></a>
+				</div>
 			</li>
-			<li class="popular_goods_item col-md-3">
+			<li class="popular_goods_item col-md-3 col-sm-4 col-xs-6">
 				<a href="#">
 					<div class="img_wrapper">
 						 <img src="img/pg6.png" alt="pic">
@@ -339,10 +341,12 @@
 					<span class="popular_goods_item_description">Мужская стильная спортивная шапка Adidas B800 Sweppre NEW</span>
 					<span class="popular_goods_item_price">870</span><span>руб.</span>
 				</a>
-				<a href="#" class="zoom"></a>
-				<a href="#" class="like"></a>
+				<div class="popular_goods_item_hover_links">
+					<a href="#" class="zoom"></a>
+					<a href="#" class="like"></a>
+				</div>
 			</li>
-			<li class="popular_goods_item col-md-3">
+			<li class="popular_goods_item col-md-3 col-sm-4 col-xs-6">
 				<a href="#">
 					<div class="img_wrapper">
 						<img src="img/pg7.png" alt="pic"> 
@@ -352,10 +356,12 @@
 					<span class="popular_goods_item_price">870</span><span>руб.</span>					
 					<span class="old_price">770</span><span>руб.</span>
 				</a>
-				<a href="#" class="zoom"></a>
-				<a href="#" class="like"></a>
+				<div class="popular_goods_item_hover_links">
+					<a href="#" class="zoom"></a>
+					<a href="#" class="like"></a>
+				</div>
 			</li>
-			<li class="popular_goods_item col-md-3">
+			<li class="popular_goods_item col-md-3 col-sm-4 col-xs-6">
 				<a href="#">
 					<div class="img_wrapper">
 						<img src="img/pg8.png" alt="pic"> 
@@ -364,8 +370,10 @@
 					<span class="popular_goods_item_description">Мужская стильная спортивная шапка Adidas B800 Sweppre NEW</span>
 					<span class="popular_goods_item_price">870</span><span>руб.</span>
 				</a>
-				<a href="#" class="zoom"></a>
-				<a href="#" class="like"></a>
+				<div class="popular_goods_item_hover_links">
+					<a href="#" class="zoom"></a>
+					<a href="#" class="like"></a>
+				</div>				
 			</li>
 		</ul>	
 	</div>
@@ -373,32 +381,32 @@
 <section class="brands">
 	<h3>Доступные мировые производители</h3>
 	<div class="container">
-		<ul class="bxslider2 row">
-			<li class="brands_item col-md-2">
-				<div class="img_wrap hm"></div>				
-				<span>680 товаров</span>
-			</li>
-			<li class="brands_item col-md-2">
-				<div class="img_wrap nike"></div>				
-				<span>680 товаров</span>
-			</li>
-			<li class="brands_item col-md-2">
-				<div class="img_wrap decora"></div>				
-				<span>680 товаров</span>
-			</li>
-			<li class="brands_item col-md-2">
-				<div class="img_wrap rb"></div>				
-				<span>680 товаров</span>
-			</li>
-			<li class="brands_item col-md-2">
-				<div class="img_wrap puma"></div>				
-				<span>680 товаров</span>
-			</li>
-			<li class="brands_item col-md-2">
-				<div class="img_wrap rapha"></div>				
-				<span>680 товаров</span>
-			</li>
-		</ul>
+		<div id="owl-brands" class="owl-brands">
+		  <div class="brands_item">
+		  	<div class="img_wrap hm"></div>				
+			<span>680 товаров</span>
+		  </div>
+		  <div class="brands_item">
+			<div class="img_wrap nike"></div>				
+			<span>680 товаров</span>
+		  </div>
+		  <div class="brands_item">
+			<div class="img_wrap decora"></div>				
+			<span>680 товаров</span>
+		  </div>
+		  <div class="brands_item">
+			<div class="img_wrap rb"></div>				
+			<span>680 товаров</span>
+		  </div>
+		  <div class="brands_item">
+			<div class="img_wrap puma"></div>				
+			<span>680 товаров</span>
+		   </div>
+		  <div class="brands_item">
+			<div class="img_wrap rapha"></div>				
+			<span>680 товаров</span>
+		  </div>
+		</div>
 	</div>
 </section>
 <section class="seo">
@@ -425,7 +433,7 @@
 	<section class="footer_menus">
 		<div class="container">
 			<ul class="row">
-				<li class="col-md-3">
+				<li class="col-md-3 col-sm-4 col-xs-6">
 					<p>О нашем проекте</p>
 					<ul>
 						<li>
@@ -448,7 +456,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="col-md-3">
+				<li class="col-md-3 col-sm-4 col-xs-6">
 					<p>Популярные бренды</p>
 					<ul>
 						<li>
@@ -477,7 +485,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="col-md-3">
+				<li class="col-md-3 col-sm-4 col-xs-6">
 					<p>Популярные товары</p>
 					<ul>
 						<li>
@@ -512,7 +520,7 @@
 						</li>
 					</ul>					
 				</li>
-				<li class="col-md-3">
+				<li class="col-md-3 col-sm-4 col-xs-6">
 					<p>Наши партнеры</p>
 					<ul>
 						<li>
@@ -555,64 +563,6 @@
 		</div>	
 	</section>
 </footer>
-
-
-
-<!-- <section class="advanteges">
-	<div class="container">
-		<h2>Сделайте свою жизнь проще!</h2>
-		<div class="advanteges_text">
-			<p>Время, как известно, – это деньги. Бензин дорожает, общественный транспорт поднимает цены за проезд. Заказать услуги курьера иногда дешевле, чем заниматься доставкой самостоятельно. Наша ценовая политика – доказательство того, что доставка по Москве и Московской области – это недорого.
-			</p>
-			<span class="new_string text-center">Распорядитесь бюджетом с умом!</span>
-		</div>
-		<div class="row">
-			<a href="#" class="advanteges_item col-md-3 col-md-offset-3 col-sm-6 col-xs-6 col-sm-offset-0">
-				<img class="text-center" src="img/adv_icon_1.png" width="124" height="123" alt="adv_icon_1">
-				<span class="new_string text-center"><span class="new_string">Экономьте</span>вместе с нами</span>
-			</a>
-			<a href="#" class="advanteges_item col-md-3 col-sm-6 col-xs-6">
-				<img class="text-center" src="img/adv_icon_1.png" width="124" height="123" alt="adv_icon_1">
-				<span class="new_string text-center"><span class="new_string">Экономьте</span>вместе с нами</span>
-			</a>
-		</div>
-		<div class="row marg_bot_90">
-			<a href="#" class="advanteges_item col-md-3 col-sm-6 col-xs-6">
-				<img class="text-center" src="img/adv_icon_1.png" width="124" height="123" alt="adv_icon_1">
-				<span class="new_string text-center"><span class="new_string">Экономьте</span>вместе с нами</span>
-			</a>
-			<a href="#" class="advanteges_item col-md-3 col-md-offset-6 col-sm-6 col-xs-6">
-				<img class="text-center" src="img/adv_icon_1.png" width="124" height="123" alt="adv_icon_1">
-				<span class="new_string text-center"><span class="new_string">Экономьте</span>вместе с нами</span>
-			</a>
-		</div>
-		<div class="row">
-			<a href="#" class="advanteges_item col-md-3 col-sm-6 col-xs-6">
-				<img class="text-center" src="img/adv_icon_1.png" width="124" height="123" alt="adv_icon_1">
-				<span class="new_string text-center"><span class="new_string">Экономьте</span>вместе с нами</span>
-			</a>
-			<a href="#" class="advanteges_item col-md-3 col-md-offset-6 col-sm-6 col-xs-6">
-				<img class="text-center" src="img/adv_icon_1.png" width="124" height="123" alt="adv_icon_1">
-				<span class="new_string text-center"><span class="new_string">Экономьте</span>вместе с нами</span>
-			</a>
-		</div>
-		<div class="row">
-			<a href="#" class="advanteges_item col-md-3 col-md-offset-3 col-sm-6 col-xs-6 col-sm-offset-0">
-				<img class="text-center" src="img/adv_icon_1.png" width="124" height="123" alt="adv_icon_1">
-				<span class="new_string text-center"><span class="new_string">Экономьте</span>вместе с нами</span>
-			</a>
-			<a href="#" class="advanteges_item col-md-3 col-sm-6 col-xs-6">
-				<img class="text-center" src="img/adv_icon_1.png" width="124" height="123" alt="adv_icon_1">
-				<span class="new_string text-center"><span class="new_string">Экономьте</span>вместе с нами</span>
-			</a>
-		</div>
-		<div class="row"> 
-			<div class="btn_wrapper col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-				<button class="btn_main text-center" type="button" data-toggle="modal" data-target="#myModal">Заказать курьерскую доставку</button>
-			</div>			
-		</div>
-	</div>	
-</section> -->
 
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>  

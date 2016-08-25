@@ -1,54 +1,59 @@
 $(document).ready(function(){
 
- 
-	$('.bxslider').bxSlider({
-  		pager: true
-  	});
+//humburger menu
+  $("#hamb-btn").click(function(){
+    $(".header_nav").toggle( "slow", function(){
+    });
+  });
 
-	$('.bxslider2').bxSlider({
-  		pager: false,
-  		infiniteLoop: true,
-  		displaySlideQty: 6
-  	});
+//sliders
+  $("#owl-slider1").owlCarousel({
+    items: 1,
+    loop: true,
+    navigation: true,
+    navigationText : false,    
+    responsiveBaseWidth: window,
+    itemsDesktop: [1199,1],
+    itemsDesktopSmall : [900,1],
+    itemsTablet: [768,1],
+    itemsMobile: [479,1]
+   });
 
+	$("#owl-brands").owlCarousel({
+  	items: 5,
+  	loop: true,
+  	navigation: true,
+ 		navigationText : false,  		
+    responsiveBaseWidth: window,
+    itemsDesktop: [1199,4],
+    itemsDesktopSmall : [900,3],
+    itemsTablet: [768,2],
+    itemsMobile: [479,1]
+	});
+
+ //hover menu
 	$(".header_nav>ul>li>a,.hover_menu").mouseover(function() {
-		$(".hover_menu").css( "display", "block" )		
-		})
+    if (window.matchMedia('(max-width: 900px)').matches) {
+      $(".hover_menu").css( "display", "none" )  
+    }
+    else {
+		  $(".hover_menu").css( "display", "block" )	
+    }	
+	})
 		.mouseout(function() {
 	    $(".hover_menu").css( "display", "none" )
 	});
-	
-	// $(".header_nav>ul>item1>a").mouseover(function() {
-	// 	$(".header_nav>ul>item1>span").css( "display", "block" )		
-	// 	})
-	// 	.mouseout(function() {
-	//     $(".header_nav>ul>item1>span").css( "display", "none" )
-	// });
-	// $(".header_nav>ul>item2>a").mouseover(function() {
-	// 	$(".header_nav>ul>item2>span").css( "display", "block" )		
-	// 	})
-	// 	.mouseout(function() {
-	//     $(".header_nav>ul>item2>span").css( "display", "none" )
-	// });
-	// $(".header_nav>ul>item3>a").mouseover(function() {
-	// 	$(".header_nav>ul>item3>span").css( "display", "block" )		
-	// 	})
-	// 	.mouseout(function() {
-	//     $(".header_nav>ul>item3>span").css( "display", "none" )
-	// });
-	// $(".header_nav>ul>item4>a").mouseover(function() {
-	// 	$(".header_nav>ul>item4>span").css( "display", "block" )		
-	// 	})
-	// 	.mouseout(function() {
-	//     $(".header_nav>ul>item4>span").css( "display", "none" )
-	// });
-	// $(".header_nav>ul>item5>a").mouseover(function() {
-	// 	$(".header_nav>ul>item5>span").css( "display", "block" )		
-	// 	})
-	// 	.mouseout(function() {
-	//     $(".header_nav>ul>item5>span").css( "display", "none" )
-	// });	
 
+  if (window.matchMedia('(max-width: 900px)').matches) {
+      $(".hover_menu").css( "display", "none" )  
+  };
+
+  //меняем текст placeholder'а на более короткий для экранов с малым разрешением
+  if (window.matchMedia('(max-width: 500px)').matches) {
+      $(".search_goods_form_input").attr("placeholder", "Поиск товара")   
+  };
+ 
+	
 });
 
 

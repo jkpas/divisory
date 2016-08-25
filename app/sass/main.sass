@@ -1,48 +1,48 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td 
 	margin: 0
 	padding: 0
-  border: 0
-  outline: 0
-  font-size: 100%
-  background: transparent
+	border: 0
+	outline: 0
+	font-size: 100%
+	background: transparent
 
 blockquote, q 
-  quotes: none
+	quotes: none
 
 blockquote:before, blockquote:after, q:before, q:after 
-  content: ''
-  content: none
+	content: ''
+	content: none
 
 ins 
-  text-decoration: none
+	text-decoration: none
 
 del 
-  text-decoration: line-through
+	text-decoration: line-through
 
 table 
-  border-collapse: collapse
-  border-spacing: 0
+	border-collapse: collapse
+	border-spacing: 0
 
 strong 
-  font-weight: bold
+	font-weight: bold
 
 textarea, input 
-  outline: medium none
+	outline: medium none
 
 textarea 
-  resize: none
+	resize: none
 
 input:focus, textarea:focus, button:focus 
-  outline: medium none
+	outline: medium none
 
 input:active, textarea:active, button:active 
-  outline: medium none
+	outline: medium none
 
 ul
-  list-style: none
+	list-style: none
 
 .clearfix
-  clear: both  
+	clear: both  
 
 @font-face 
 	font-family: 'DINPro-Regular'
@@ -55,44 +55,34 @@ $dinpro: 'DINPro-Regular'
 
 @font-face
 	font-family: "Open Sans Light Italic"
-	src:url("../fonts/OpenSans-LightItalic.eot?") format("eot"),
-	url("../fonts/OpenSans-LightItalic.woff") format("woff"),
-	url("../fonts/OpenSans-LightItalic.ttf") format("truetype"),
-	url("../fonts/OpenSans-LightItalic.svg#OpenSansLight-Italic") format("svg")
-
+	src: url("../fonts/OpenSans-LightItalic.eot?") format("eot"), url("../fonts/OpenSans-LightItalic.woff") format("woff"), url("../fonts/OpenSans-LightItalic.ttf") format("truetype"), url("../fonts/OpenSans-LightItalic.svg#OpenSansLight-Italic") format("svg")
 $OpenSansLI: 'Open Sans Light Italic'
 
 .container 
-	max-width: 1240px
+	max-width: 1280px
 	width: 100%
-	padding-right: 0
-	padding-left: 0
+	padding-right: 20px
+	padding-left: 20px
 
 .row 
-  margin-right: -10px
-  margin-left: -10px
+	margin-right: -10px
+	margin-left: -10px
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12     
-  padding-right: 10px
-  padding-left: 10px
+	padding-right: 10px
+	padding-left: 10px
 
 * 
-  font-family: 'PT Sans', sans-serif
-  // font-family: 'Open Sans', sans-serif
-  font-size: 12px
-  box-sizing: border-box
-  -moz-box-sizing: border-box  
+	font-family: 'PT Sans', sans-serif
+	font-size: 12px
+	box-sizing: border-box
+	-moz-box-sizing: border-box  
 
 body
 	background-color: #ffffff
 
 section
 	margin-bottom: 40px
-
-input::-webkit-input-placeholder color:inherit
-input::-moz-placeholder          color:inherit/* Firefox 19+ */
-input:-moz-placeholder           color:inherit/* Firefox 18- */
-input:-ms-input-placeholder      color:inherit
 
 h2
 	font-family: $OpenSansLI san-serif
@@ -101,14 +91,16 @@ h2
 	font-size: 55px
 	color: #ffffff
 	margin-bottom: 10px
+	text-align: center
 
 h3
 	font-family: $OpenSansLI san-serif
 	font-style: italic
 	font-weight: light
+	text-align: center
 
 .new_string
-  display: block
+	display: block
 
 .header_top
 	height: 127px
@@ -122,9 +114,9 @@ h3
 	.search
 		float: left
 		margin: 6px 0 0 105px
-		position: relative		
-		max-width: 672px
+		position: relative	
 		height: 45px
+		width: 676px  
 		.input	
 			border: 1px solid #e0e0e0
 			padding: 0 20px 0 17px
@@ -133,25 +125,25 @@ h3
 			color: #bcbcbc
 			font-style: italic
 			height: 100%
-			width: 630px  		
+			width: 100%  		
 		.submit   
-  		position: absolute
-  		top: 0
-  		right: 21px
- 			width: 42px
-  		height: 45px
-  		cursor: pointer
-  		background: url(../img/go.png) center center no-repeat
-  		border: none
+			position: absolute
+			top: 0
+			right: 2px
+			width: 42px
+			height: 45px
+			cursor: pointer
+			background: url(../img/go.png) center center no-repeat
+			border: none
 	.count
 		float: right
 		ul
-			margin-bottom: 10px
+			margin-bottom: 5px
 			li 
 				display: inline-block
 				height: 45px
 				width: 30px
-				margin: 0 1px
+				margin: 0 -1px
 				background: url(../img/count-bg.png) no-repeat	
 				font-family: $dinpro 			
 				font-size: 29px
@@ -168,26 +160,45 @@ h3
 	height: 53px
 	background: url(../img/header-bottom-bg.png)	
 	padding-top: 15px	
+	#hamb-btn
+		display: none
+		float: left
+		width: 30px
+		height: 30px
+		background-color: transparent
+		border: 2px solid #ffffff
+		border-radius: 5px
+		position: relative
+	#hamb-btn:after, #hamb-btn:before
+		content: ''
+		width: 23px
+		height: 4px
+		background-color: #ffffff
+		position: absolute
+		border-radius: 5px
+		left: 2px
+	#hamb-btn:after
+		top: 7px
+	#hamb-btn:before
+		top: 16px
 	.header_nav
 		float: left
 		position: relative
 		ul
 			.header_nav_item
 				display: inline-block
-				padding: 0 33px
+				padding: 0 29px
 				position: relative
 				a
 					font-size: 15px
 					color: #ffffff
-					text-transform: uppercase					
-				a:hover
-					text-decoration: none
-					color: #ff5a3f
-				span
+					text-transform: uppercase		
+					position: relative				
+				a:before
 					display: none
 					content: ""
 					position: absolute
-					bottom: -16px
+					bottom: -18px
 					z-index: 3000
 					left: 0
 					right: 0
@@ -197,14 +208,19 @@ h3
 					height: 0
 					border-style: solid
 					border-width: 0 8px 13px 8px
-					border-color: transparent transparent #ffffff transparent			
+					border-color: transparent transparent #ffffff transparent
+				a:hover				
+					text-decoration: none
+					color: #ff5a3f
+				// a:hover:before
+				// 	display: block				
 			.header_nav_item:after
 				content: ""
 				position: absolute
 				right: 0
-				background:url(../img/nav-line.png) no-repeat
+				background: url(../img/nav-line.png) no-repeat
 				width: 3px
-				height: 90px
+				height: 9px
 				top: 6px
 				right: 0					
 			.header_nav_item:first-child
@@ -279,7 +295,8 @@ h3
 			color: #ffffff
 .slogan
 	background: url(../img/slogan-bg.png) center center no-repeat
-	padding: 15px 0 30px	
+	padding: 18px 0 33px
+	margin-bottom: 38px	
 	h3
 		font-family: $OpenSansLI
 		font-size: 17px
@@ -288,77 +305,84 @@ h3
 	height: 502px	
 	.container
 		height: 100%
-		.bxslider
-			height: 502px
-			li					
-				width: 100%
-				height: 100%
-				div
-					padding: 65px 0 0 80px
-					height: 100%		
-					.slide_title
-						text-align: left
-						font-size: 50px
-						line-height: 60px
-						margin-bottom: 40px
-						span
-							display: block
-							font-family: inherit
-							font-weight: inherit
-							font-style: inherit
-							font-size: inherit
-					.slide_description
-						font-size: 17px
-						color: #404040
-						text-align: left
-						margin-bottom: 40px
-						line-height: 26px
-					.slide_price
-						font-family: $dinpro
-						font-size: 111px
-						color: #ff5a3f	
-						span	
-							font-family: inherit
-							color: inherit
-							font-size: 50px
-				.slide1 													
-					background: url(../img/slider-img1.png) no-repeat top
-				.slide2 
-					background: url(../img/slider-img1.png) no-repeat top
-				.slide3 
-					background: url(../img/slider-img1.png) no-repeat top
-		.bx-pager
+		.owl-slider1
+			height: 100%
+			.owl-wrapper-outer
+				height: 100%	
+				.owl-wrapper
+					height: 100%	
+					.owl-item
+						height: 100%	
+						.owl-slider1_item
+							width: 100%
+							height: 100%
+							padding: 61px 0 0 76px
+							.slide_title
+								text-align: left
+								font-size: 50px
+								line-height: 60px
+								margin-bottom: 36px
+								span
+									display: block
+									font-family: inherit
+									font-weight: inherit
+									font-style: inherit
+									font-size: inherit
+							.slide_description
+								font-size: 17px
+								color: #404040
+								text-align: left
+								margin-bottom: 5px
+								line-height: 26px
+							.slide_price
+								font-family: $dinpro
+								font-size: 111px
+								color: #ff5a3f	
+								span	
+									font-family: inherit
+									color: inherit
+									font-size: 50px
+						.slide1 													
+							background: url(../img/slider-img1.png) no-repeat top
+						.slide2 
+							background: url(../img/slider-img1.png) no-repeat top
+						.slide3 
+							background: url(../img/slider-img1.png) no-repeat top
+		.owl-prev 
+			position: absolute
+			left: -9px
+			top: 213px
+			height: 78px
+			width: 44px
+			background: url(../img/slider-prev.png) center no-repeat
+		.owl-next 	
+			position: absolute
+			right: -11px
+			top: 213px
+			height: 78px
+			width: 44px
+			background: url(../img/slider-next.png) center no-repeat
+		.owl-prev:hover,.owl-next:hover
+			opacity: 0.7
+		.owl-pagination
 			position: absolute 		
 			bottom: 0px
 			height: 26px
 			width: 100%
 			padding-top: 10px
 			background: url(../img/slider-pagin-bg.png) no-repeat center bottom
-			a
+			text-align: center
+			.owl-page
+				display: inline-block
 				height: 13px
 				width: 13px
 				background: #e0e0e0
 				border-radius: 50% 
 				padding-top: 11px
 				font-size: 0
-			a.pager-active
+				margin: 0 2px
+			.owl-page.active
 				background: #ff5a3f 
-		.bx-prev 
-			position: absolute
-			left: -22px
-			top: 45%
-			height: 78px
-			width: 44px
-			background: url(../img/slider-prev.png) center no-repeat
-		.bx-next 
-			position: absolute
-			right: -22px
-			top: 45%
-			height: 78px
-			width: 44px
-			background: url(../img/slider-next.png) center no-repeat
-		.bx-prev:hover,.bx-next:hover
-			opacity: 0.7
 .search_goods
 	.container
 		padding: 40px
@@ -366,11 +390,11 @@ h3
 		border-radius: 3px
 		.search_goods_form
 			position: relative		
-			max-width: 910px
-			width: 100%
+			max-width: none
+			width: 75%
 			height: 60px
 			float: left
-			.input	
+			.search_goods_form_input	
 				border: none
 				padding: 0 20px
 				border-radius: 3px
@@ -380,18 +404,18 @@ h3
 				height: 100%
 				width: 100%		
 			.submit   
-	  		position: absolute
-	  		top: 0
-	  		right: 21px
-	 			width: 40px
-	  		height: 60px
-	  		cursor: pointer
-	  		background: url(../img/go-big.png) center center no-repeat
-	  		border: none
+				position: absolute
+				top: 0
+				right: 21px
+				width: 40px
+				height: 60px
+				cursor: pointer
+				background: url(../img/go-big.png) center center no-repeat
+				border: none
 		#search_goods_button
 			float: right
 			height: 60px
-			width: 230px
+			width: 20%
 			background: #ff5a3f
 			border-radius: 3px
 			color: #ffffff
@@ -452,11 +476,12 @@ h3
 					padding-top: 263px
 				.main_menu_item_bg:after				
 					top: 280px
-					right: 370px
-.popular_goods					
+.popular_goods		
+	margin-bottom: 19px			
 	.popular_goods_top
 		padding: 45px 0 35px
 		border-top: 1px solid #f2f2f2
+		text-align: center
 		h3			
 			color: #404040
 			margin-bottom: 25px
@@ -465,7 +490,7 @@ h3
 			font-style: italic
 			line-height: 25px
 			font-size: 17px
-			color: #404040
+			color: #404040			
 	.container		
 		ul
 			list-style: none
@@ -485,10 +510,28 @@ h3
 					font-size: 13px
 					text-align: center
 					padding-top: 7px
-				.zoom
+				.popular_goods_item_hover_links
 					display: none
-				.like
-					display: none
+					position: absolute
+					top: 138px
+					left: 0
+					right: 0
+					margin-left: auto
+					margin-right: auto					
+					width: 150px
+					height: 65px
+					.zoom
+						display: block
+						width: 65px
+						height: 65px
+						background: url(../img/zoom.png) no-repeat
+						float: left
+					.like
+						display: block
+						width: 65px
+						height: 65px
+						background: url(../img/like.png) no-repeat
+						float: right
 				a
 					text-decoration: none
 					.img_wrapper
@@ -507,14 +550,14 @@ h3
 						font-size: 17px
 						line-height: 25px
 						color: #404040
-						margin-bottom: 5px
+						margin-bottom: 0
 					.popular_goods_item_description
 						display: block
 						text-align: left
 						font-size: 17px
 						line-height: 27px
 						color: #bcbcbc
-						margin-bottom: 5px				
+						margin-bottom: -5px				
 					.popular_goods_item_price
 						float: left
 						font-family: $dinpro 			
@@ -544,36 +587,26 @@ h3
 				.img_wrapper
 					background-color: #f7f7f7
 					opacity: 0.2
-				.zoom
-
-					display: block
-					position: absolute
-					width: 65px
-					height: 65px
-					background: url(../img/zoom.png) no-repeat
-					top: 138px
-					left: 78px
-				.like
-					display: block
-					position: absolute
-					width: 65px
-					height: 65px
-					background: url(../img/like.png) no-repeat
-					top: 138px
-					left: 152px
+				.popular_goods_item_hover_links
+					display: block					
 .brands
 	h3
-		padding: 50px 0 40px
+		padding: 47px 0 44px
 		border-top: 1px solid #f2f2f2
 		color: #404040
-		margin-bottom: 25px
-		font-size: 34px
-	.container
-		.bxslider2
+		font-size: 36px
+	.container	
+		text-align: center
+		.owl-brands
 			height: 150px
-			overflow: hidden
+			width: 100%
+			left: 0
+			right: 0
+			margin: auto
+			padding: 0 20px
 			.brands_item	
 				height: 100%
+				width: 190px
 				.img_wrap
 					height: 100px
 					border-radius: 3px
@@ -606,14 +639,14 @@ h3
 				span
 					font-size: 15px
 					color: #bcbcbc
-		.bx-prev 
+		.owl-prev 
 			position: absolute
 			left: -32px
 			top: 40px
 			height: 20px
 			width: 12px
 			background: url(../img/slider2-prev.png) center no-repeat
-		.bx-next 
+		.owl-next 
 			position: absolute
 			right: -32px
 			top: 40px
@@ -621,9 +654,9 @@ h3
 			width: 12px
 			background: url(../img/slider2-next.png) center no-repeat			
 .seo
-	margin-bottom: 50px
+	margin-bottom: 57px
 	h3
-		padding: 45px 0 30px
+		padding: 41px 0 30px
 		border-top: 1px solid #f2f2f2
 		color: #404040
 		font-size: 45px		
@@ -650,7 +683,7 @@ h3
 		input
 			float: left
 			height: 40px
-			width: 365px
+			width: 27%
 			border-radius: 2px
 			background: #ffffff
 			padding: 0 20px
@@ -658,7 +691,7 @@ h3
 			color: #bcbcbc
 			margin-right: 20px
 		input[type="submit"]
-			width: 155px
+			width: 12%
 			background: #ff5a3f
 			text-align: center
 			border: none
@@ -670,28 +703,28 @@ h3
 			transform: scale(1.1)	
 			-webkit-transform: scale(1.1)	
 	.footer_menus
-		padding: 40px 0 50px
+		padding: 53px 0 50px
 		background: url(../img/footer-bg.png)
 		margin-bottom: 0
 		.row 
 			li
 				text-align: left
 				p 
-					margin-bottom: 20px
+					margin-bottom: 13px
 					font-size: 17px
 					color: #404040
 					font-weight: bold
 					line-height: 24px
 				ul
 					li
-						margin-bottom: 3px
+						margin-bottom: 1px
 						a
 							font-size: 15px
 							color: #404040
 							line-height: 29px
 						span
 							display: block
-							margin: 20px 0 15px
+							margin: 28px 0 15px
 							font-size: 17px
 							color: #404040
 							font-weight: bold
@@ -699,7 +732,7 @@ h3
 						.social_links
 							li
 								display: inline-block
-								margin-right: 6px
+								margin-right: 3px
 								a
 									display: block
 									height: 44px
@@ -726,8 +759,8 @@ h3
 									background-position:  -199px 0	
 
 
+@import "media"
 
 
-			
-
+		
 
